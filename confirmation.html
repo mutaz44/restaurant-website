@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Order Confirmation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav id="mainNav"></nav>
+
+    <h1>Order Confirmation</h1>
+
+    <div class="confirmationCard">
+
+        <h2>Thank You!</h2>
+
+        <p>Your order has been received.</p>
+
+        <hr>
+
+        <h3>Customer Information</h3>
+
+        <p>
+            <strong>Name:</strong>
+            <span id="confirmName"></span>
+        </p>
+
+        <p>
+            <strong>Phone:</strong>
+            <span id="confirmPhone"></span>
+        </p>
+
+        <p>
+            <strong>Address:</strong>
+            <span id="confirmAddress"></span>
+        </p>
+
+        <hr>
+
+        <h3>Your Order</h3>
+
+        <div id="confirmItems"></div>
+
+        <h3>
+            Total: $<span id="confirmTotal">0</span>
+        </h3>
+
+        <br>
+
+        <a href="menu.html">
+            <button type="button">
+                Order More
+            </button>
+        </a>
+
+        <a href="orders.html">
+            <button type="button">
+                My Orders
+            </button>
+        </a>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

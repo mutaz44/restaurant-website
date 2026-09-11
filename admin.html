@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Restaurant Admin</h1>
+
+    <p class="adminBanner">
+        Demo dashboard — shows orders stored in this browser only
+        (simulated, no shared backend).
+    </p>
+
+    <!-- Login -->
+    <div class="signupCard adminLoginBox" id="adminLoginBox">
+
+        <p id="adminError" class="errorMsg"></p>
+
+        <input
+            type="password"
+            id="adminPassword"
+            placeholder="Admin Password"
+        >
+
+        <button
+            type="button"
+            onclick="adminLogin()"
+        >
+            Login
+        </button>
+
+        <a href="index.html">
+            <button type="button">
+                Back to Home
+            </button>
+        </a>
+
+    </div>
+
+    <!-- Dashboard -->
+    <div class="orderCard" id="adminDashboard" style="display: none;">
+
+        <h2>All Orders</h2>
+
+        <div id="adminOrderItems"></div>
+
+        <br>
+
+        <button
+            type="button"
+            onclick="adminLogout()"
+        >
+            Logout
+        </button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>  

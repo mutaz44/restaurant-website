@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Food Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav id="mainNav"></nav>
+
+    <h1>Food Details</h1>
+
+    <div class="detailCard">
+
+        <img id="detailImage" src="" alt="">
+
+        <h2 id="detailName"></h2>
+
+        <span id="detailPrice" class="detailPrice"></span>
+
+        <div class="detailSection">
+            <h3>Description</h3>
+            <p id="detailDescription"></p>
+        </div>
+
+        <div class="detailSection">
+            <h3>Ingredients</h3>
+            <p id="detailIngredients"></p>
+        </div>
+
+        <label>Quantity:</label>
+
+        <input
+            type="number"
+            id="detailQuantity"
+            value="1"
+            min="1"
+        >
+
+        <button
+            type="button"
+            id="detailAddBtn"
+        >
+            Add to Order
+        </button>
+
+        <br>
+
+        <a href="menu.html" class="backLink">
+            &larr; Back to Menu
+        </a>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

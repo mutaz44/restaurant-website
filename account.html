@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Account</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav id="mainNav"></nav>
+
+    <h1>My Account</h1>
+
+    <div class="accountCard">
+
+        <h2>Account Information</h2>
+
+        <p>
+            <strong>Name:</strong>
+            <span id="accountName"></span>
+        </p>
+
+        <p>
+            <strong>Phone:</strong>
+            <span id="accountPhone"></span>
+        </p>
+
+        <p>
+            <strong>Address:</strong>
+            <span id="accountAddress"></span>
+        </p>
+
+        <button
+            type="button"
+            onclick="editAccount()"
+        >
+            Edit Account <i class="fa-solid fa-pen"></i>
+        </button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

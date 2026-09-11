@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="signupPage">
+
+    <h1>Create Your Account</h1>
+
+    <div class="signupCard">
+
+        <p id="signupError" class="errorMsg"></p>
+
+        <input
+            type="text"
+            id="name"
+            placeholder="Your Name"
+        >
+
+        <input
+            type="text"
+            id="phone"
+            placeholder="Your Phone"
+        >
+
+        <input
+            type="text"
+            id="address"
+            placeholder="Your Address"
+        >
+
+        <input
+            type="password"
+            id="password"
+            placeholder="Password"
+        >
+
+        <input
+            type="password"
+            id="confirmPassword"
+            placeholder="Confirm Password"
+        >
+
+        <button
+            type="button"
+            onclick="createAccount()"
+        >
+            Create Account
+        </button>
+
+        <a href="index.html">
+            <button type="button">
+                Back to Home
+            </button>
+        </a>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

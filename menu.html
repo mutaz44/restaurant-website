@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav id="mainNav"></nav>
+
+    <h1>Our Menu</h1>
+
+    <div class="categoryBar">
+
+        <button
+            type="button"
+            class="categoryBtn activeCategory"
+            data-category="All"
+            onclick="filterMenu('All')"
+        >
+            All
+        </button>
+
+        <button
+            type="button"
+            class="categoryBtn"
+            data-category="Pizza"
+            onclick="filterMenu('Pizza')"
+        >
+            Pizza
+        </button>
+
+        <button
+            type="button"
+            class="categoryBtn"
+            data-category="Burger"
+            onclick="filterMenu('Burger')"
+        >
+            Burger
+        </button>
+
+        <button
+            type="button"
+            class="categoryBtn"
+            data-category="Chicken"
+            onclick="filterMenu('Chicken')"
+        >
+            Chicken
+        </button>
+
+    </div>
+
+    <div class="menu" id="menuList">
+
+        <!-- Pizza -->
+        <div class="food" data-category="Pizza">
+
+            <a href="food-details.html?food=Pizza" class="foodLink">
+
+                <img src="images/pizza.jpg" alt="Pizza">
+
+                <h2>Pizza</h2>
+
+            </a>
+
+            <p>Delicious cheese pizza.</p>
+
+            <strong>$10</strong>
+
+            <label>Quantity:</label>
+
+            <input
+                type="number"
+                id="pizzaQuantity"
+                value="1"
+                min="1"
+            >
+
+            <button
+                type="button"
+                onclick="addToCart('Pizza', 10, 'pizzaQuantity')"
+            >
+                Add to Order
+            </button>
+
+        </div>
+
+
+        <!-- Burger -->
+        <div class="food" data-category="Burger">
+
+            <a href="food-details.html?food=Burger" class="foodLink">
+
+                <img src="images/burger.jpg" alt="Burger">
+
+                <h2>Burger</h2>
+
+            </a>
+
+            <p>Fresh and delicious burger.</p>
+
+            <strong>$8</strong>
+
+            <label>Quantity:</label>
+
+            <input
+                type="number"
+                id="burgerQuantity"
+                value="1"
+                min="1"
+            >
+
+            <button
+                type="button"
+                onclick="addToCart('Burger', 8, 'burgerQuantity')"
+            >
+                Add to Order
+            </button>
+
+        </div>
+
+
+        <!-- Chicken -->
+        <div class="food" data-category="Chicken">
+
+            <a href="food-details.html?food=Chicken" class="foodLink">
+
+                <img src="images/chicken.jpg" alt="Chicken">
+
+                <h2>Chicken</h2>
+
+            </a>
+
+            <p>Delicious crispy chicken.</p>
+
+            <strong>$12</strong>
+
+            <label>Quantity:</label>
+
+            <input
+                type="number"
+                id="chickenQuantity"
+                value="1"
+                min="1"
+            >
+
+            <button
+                type="button"
+                onclick="addToCart('Chicken', 12, 'chickenQuantity')"
+            >
+                Add to Order
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Cart -->
+
+    <div class="cartBox">
+
+        <h2>Your Order</h2>
+
+        <p id="cartError" class="errorMsg"></p>
+
+        <div id="cartItems">
+            No items added yet.
+        </div>
+
+        <h3>
+            Total: $<span id="cartTotal">0</span>
+        </h3>
+
+        <button
+            type="button"
+            onclick="completeOrder()"
+        >
+            Complete Order
+        </button>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
