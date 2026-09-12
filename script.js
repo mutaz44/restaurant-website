@@ -311,6 +311,7 @@ function showAccountButton() {
     if (!accountData) {
 
         mainNav.innerHTML = `
+            <a href="index.html">Home</a>
             <a href="login.html">Login</a>
             <a href="signup.html">Create Account</a>
             <a href="about.html">About</a>
