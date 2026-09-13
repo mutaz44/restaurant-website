@@ -17,7 +17,7 @@ body {
 }
 
 body {
-    background-color: rgb(163, 204, 50);
+    background-color: #f7f7f5;
     padding-top: 100px;
     font-family: Arial, sans-serif;
 }
@@ -744,7 +744,7 @@ body > p {
 
 .heroContent p {
     font-size: 18px;
-    color: #555;
+    color: #000;
     margin-bottom: 35px;
 }
 
@@ -878,7 +878,7 @@ body > p {
 
 .infoCard p {
     font-size: 18px;
-    color: #444;
+    color: #000;
     line-height: 1.6;
 }
 
@@ -1032,7 +1032,7 @@ body > p {
 
 .detailSection p {
     font-size: 16px;
-    color: #444;
+    color: #000;
     line-height: 1.5;
 }
 
@@ -1199,7 +1199,7 @@ body > p {
 .homeSection .sectionSubtitle {
     text-align: center;
     font-size: 17px;
-    color: #444;
+    color: #000;
     margin-bottom: 35px;
 }
 
@@ -1305,7 +1305,7 @@ body > p {
 
 .whyCard p {
     font-size: 15px;
-    color: #555;
+    color: #000;
     line-height: 1.5;
 }
 
@@ -1384,7 +1384,7 @@ body > p {
 
 .testimonialCard p.quote {
     font-size: 15px;
-    color: #444;
+    color: #000;
     line-height: 1.6;
     margin-bottom: 18px;
 }

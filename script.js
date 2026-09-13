@@ -538,6 +538,9 @@ function loadHeroButtons() {
 
     if (!heroButtons) return;
 
+    let extraSections =
+        document.getElementById("homeExtraSections");
+
     let accountData =
         localStorage.getItem("restaurantAccount");
 
@@ -561,7 +564,15 @@ function loadHeroButtons() {
 
         `;
 
+        if (extraSections) {
+            extraSections.style.display = "block";
+        }
+
         return;
+    }
+
+    if (extraSections) {
+        extraSections.style.display = "none";
     }
 
     heroButtons.innerHTML = `
