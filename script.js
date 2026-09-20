@@ -938,6 +938,12 @@ function completeOrder() {
             return sum + (item.price * item.quantity);
         }, 0);
 
+    let paymentInput =
+        document.querySelector('input[name="paymentMethod"]:checked');
+
+    let paymentMethod =
+        paymentInput ? paymentInput.value : "Cash";
+
     let orders =
         JSON.parse(localStorage.getItem("orders")) || [];
 
@@ -946,7 +952,8 @@ function completeOrder() {
         dateTime: Date.now(),
         items: cart,
         total: total,
-        status: "Preparing"
+        status: "Preparing",
+        paymentMethod: paymentMethod
     };
 
     orders.push(newOrder);
@@ -1030,6 +1037,16 @@ function loadCartConfirmation() {
     });
 
     document.getElementById("confirmTotal").textContent = order.total;
+
+    let paymentElement =
+        document.getElementById("confirmPayment");
+
+    if (paymentElement) {
+
+        paymentElement.textContent =
+            order.paymentMethod || "Cash";
+
+    }
 }
 
 
@@ -1084,6 +1101,9 @@ function loadOrders() {
                     ${order.status}
                 </span>
                 <p class="orderTotal">Total: $${order.total}</p>
+                <p class="orderPayment">
+                    Payment: ${order.paymentMethod || "Cash"}
+                </p>
             </div>
         `;
 
@@ -1213,6 +1233,9 @@ function loadAdminOrders() {
                     ${order.status}
                 </span>
                 <p class="orderTotal">Total: $${order.total}</p>
+                <p class="orderPayment">
+                    Payment: ${order.paymentMethod || "Cash"}
+                </p>
                 ${nextButtonHtml}
             </div>
         `;
